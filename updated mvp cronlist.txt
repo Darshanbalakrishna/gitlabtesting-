@@ -1,0 +1,148 @@
+
+
+00 1 * * * /usr/bin/php /application/directv/artisan dtvmvp:import-dtv-accounts-new 0 test
+
+0 0 * * * /usr/bin/php /application/directv/artisan dtvmvp:sync-schedule-v4
+
+0 * * * * /usr/bin/php /application/directv/artiasan dtvmvp:ufc-api-new
+
+0 * * * * /usr/bin/php /application/directv/artisan dtvmvp:update-products
+
+0 9 * * * /usr/bin/php /application/directv/artisan dtvmvp:import-dtv-accounts
+
+0 10 * * * /usr/bin/php /application/directv/artisan dtvmvp:clean-elasticsearch
+
+#10 0 * * * /usr/bin/php /application/directv/artisan dtvmvp:sync-ufc-schedule
+
+0 0 * * * /usr/bin/php /application/directv/artisan dtvmvp:sync-schedule-v4
+
+30 11 * * * /usr/bin/php /application/directv/artisan dtvmvp:import-ufc-accounts
+
+0 11 * * * /usr/bin/php /application/directv/artisan dtvmvp:move-ufc
+
+#* * * * * /usr/bin/php /application/directv/artisan dtvmvp:sync-schedule-v4-stats-event
+
+* * * * * /application/cronlist/stats.sh
+
+0 3 * * * /home/directv/delMerchandise.sh
+
+0 4 * * THU /application/cronlist/sendmail.sh
+
+0 4 * * MON /application/cronlist/sendmail.sh
+
+0 0 * * * /application/cronlist/schedule.sh
+
+#0 0 * * * /usr/bin/php /application/directv/artisan directv:update-latlon all 10000
+
+00 1 * * * /usr/bin/php /application/directv/artisan dtvmvp:import-dtv-accounts-new 0 test
+
+00 2 * * * /usr/bin/php /application/directv/artisan update:accn
+
+20 2 * * * /usr/bin/php /application/directv/artisan dtvmvp:import-dtv-accounts-new-test 0 test espn_accn
+
+25 2 * * * /usr/bin/php /application/directv/artisan dtvmvp:import-dtv-accounts-new-test 0 test ufc
+
+30 2 * * * /usr/bin/php /application/directv/artisan dtvmvp:import-dtv-accounts-new-yelp 2000 0
+
+30 2 * * * /usr/bin/php /application/directv/artisan dtvmvp:import-dtv-accounts-new-yelp 2000 2000
+
+30 2 * * * /usr/bin/php /application/directv/artisan dtvmvp:import-dtv-accounts-new-yelp 2000 4000
+
+30 2 * * * /usr/bin/php /application/directv/artisan dtvmvp:import-dtv-accounts-new-yelp 2000 6000
+
+30 2 * * * /usr/bin/php /application/directv/artisan dtvmvp:import-dtv-accounts-new-yelp 2000 8000
+
+30 2 * * * /usr/bin/php /application/directv/artisan dtvmvp:import-dtv-accounts-new-yelp 2000 10000
+
+30 2 * * * /usr/bin/php /application/directv/artisan dtvmvp:import-dtv-accounts-new-yelp 2000 12000
+
+30 2 * * * /usr/bin/php /application/directv/artisan dtvmvp:import-dtv-accounts-new-yelp 2000 14000
+
+30 2 * * * /usr/bin/php /application/directv/artisan dtvmvp:import-dtv-accounts-new-yelp 2000 16000
+
+30 2 * * * /usr/bin/php /application/directv/artisan dtvmvp:import-dtv-accounts-new-yelp 2000 18000
+
+
+0 6 * * * /usr/bin/php  /application/directv/artisan dtvmvp:update-yelpdata-v3 5000 0
+
+0 6 * * * /usr/bin/php  /application/directv/artisan dtvmvp:update-yelpdata-v3 5000 5000
+
+0 6 * * * /usr/bin/php  /application/directv/artisan dtvmvp:update-yelpdata-v3 5000 10000
+
+0 6 * * * /usr/bin/php  /application/directv/artisan dtvmvp:update-yelpdata-v3 5000 15000
+
+30 6 * * * /usr/bin/php /application/directv/artisan dtvmvp:update-yelpdata-v3 5000 20000
+
+30 6 * * * /usr/bin/php /application/directv/artisan dtvmvp:update-yelpdata-v3 5000 25000
+
+30 6 * * * /usr/bin/php /application/directv/artisan dtvmvp:update-yelpdata-v3 5000 30000
+
+30 6 * * * /usr/bin/php /application/directv/artisan dtvmvp:update-yelpdata-v3 5000 35000
+
+30 6 * * * /usr/bin/php /application/directv/artisan dtvmvp:update-yelpdata-v3 5000 40000
+
+0 7 * * * /usr/bin/php /var/www/directv-productionartisan dtvmvp:update-yelpdata-v3 5000 45000
+
+0 7 * * * /usr/bin/php /application/directv/artisan dtvmvp:update-yelpdata-v3 5000 50000
+
+0 7 * * * /usr/bin/php /application/directv/artisan dtvmvp:update-yelpdata-v3 5000 55000
+
+0 7 * * * /usr/bin/php /application/directv/artisan dtvmvp:update-yelpdata-v3 5000 60000
+
+0 7 * * * /usr/bin/php /application/directv/artisan dtvmvp:update-yelpdata-v3 5000 65000
+
+0 7 * * * /usr/bin/php /application/directv/artisan dtvmvp:update-yelpdata-v3 5000 70000
+
+0 7 * * * /usr/bin/php /application/directv/artisan dtvmvp:update-yelpdata-v3 5000 75000
+
+0 7 * * * /usr/bin/php /application/directv/artisan dtvmvp:update-yelpdata-v3 5000 80000
+
+0 7 * * * /usr/bin/php /application/directv/artisan dtvmvp:update-yelpdata-v3 5000 85000
+
+
+0 8 * * * /usr/bin/php /application/directv/artisan dtvmvp:populate-bar-elasticsearch-v3 10000 0
+
+#15 8 * * * /usr/bin/php /application/directv/artisan dtvmvp:populate-bar-elasticsearch-v3 10000 10000
+
+30 8 * * * /usr/bin/php /application/directv/artisan dtvmvp:populate-bar-elasticsearch-v3 10000 20000
+
+45 8 * * * /usr/bin/php /application/directv/artisan dtvmvp:populate-bar-elasticsearch-v3 10000 30000
+
+00 9 * * * /usr/bin/php /application/directv/artisan dtvmvp:populate-bar-elasticsearch-v3 10000 40000
+
+15 9 * * * /usr/bin/php /application/directv/artisan dtvmvp:populate-bar-elasticsearch-v3 10000 50000
+
+30 9 * * * /usr/bin/php /application/directv/artisan dtvmvp:populate-bar-elasticsearch-v3 10000 60000
+
+45 9 * * * /usr/bin/php /application/directv/artisan dtvmvp:populate-bar-elasticsearch-v3 10000 70000
+
+0 10 * * * /usr/bin/php /application/directv/artisan dtvmvp:populate-bar-elasticsearch-v3 10000 80000
+
+15 10 * * * /usr/bin/php /application/directv/artisan dtvmvp:populate-bar-elasticsearch-v3 10000 90000
+
+* * * * * /usr/bin/php /application/directv/artisan dtvmvp:populate-bar-elasticsearch-based-on-es-status
+
+* * * * * /usr/bin/php /application/directv/artisan dtvmvp:sync-schedule-v5-stats-event
+
+
+
+
+
+
+0 5 * * * /usr/bin/php /application/directv/artisan dtvmvp:sync-schedule-v5-daily 9
+
+5 5 * * * /usr/bin/php /application/directv/artisan dtvmvp:sync-schedule-v5-daily 10
+
+10 5 * * * /usr/bin/php /application/directv/artisan dtvmvp:sync-schedule-v5-daily 20
+
+15 5 * * * /usr/bin/php /application/directv/artisan dtvmvp:sync-schedule-v5-daily 30
+
+20 5 * * * /usr/bin/php /application/directv/artisan dtvmvp:sync-schedule-v5-daily 40
+
+25 5 * * * /usr/bin/php /application/directv/artisan dtvmvp:sync-schedule-v5-daily 60
+
+30 5 * * * /usr/bin/php /application/directv/artisan dtvmvp:sync-schedule-v5-daily 61
+
+
+
+5 4 1 * * /usr/bin/php /application/directv/artisan dtvmvp:sendquestiondatafile
